@@ -1,0 +1,12 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+
+.booklist-card {
+  display: flex;
+  flex-basis: 28%;
+  border: 1px solid lightgrey;
+}

@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { searchCharacters, autoSuggestion } from "../../utility";
-import { useDebounce } from "../../custom-hooks";
-import "./index.css";
+import React, { useEffect, useState, useCallback } from 'react';
+import { searchCharacters, autoSuggestion } from '../../utility';
+import { useDebounce } from '../../custom-hooks';
 
-function AutoComplete({ addSelectedBook }) {
+import SuggestionList from './suggestion-list';
+import Form from '../blocks/form';
+import './index.css';
+
+function AutoComplete({ addSelectedBook, limit }) {
   // State and setter for search term
-  const [searchTerm, setSearchTerm] = useState("");
-  // autoSuggestion limit number
-  const limit = 3;
+  const [searchTerm, setSearchTerm] = useState('');
+
   // State and setter for search results
   const [results, setResults] = useState([]);
 
@@ -23,8 +25,30 @@ function AutoComplete({ addSelectedBook }) {
     } else {
       setResults([]);
     }
-  }, [debouncedSearchTerm]);
-  return <div className="autocomplete-container">AutoComplete</div>;
+  }, [debouncedSearchTerm, limit]);
+
+  const onFormChange = useCallback((value) => {
+    setSearchTerm(value);
+  }, []);
+  return (
+    <div className="autocomplete-container">
+      <div className="autocomplete-height">
+        <div className="form-box">
+          <div className="form-size">
+            <Form
+              onChangeHandler={onFormChange}
+              inputPlaceholder={'Search your books'}
+            />
+          </div>
+        </div>
+        <div className="list-box">
+          <div className="list-size">
+            <SuggestionList addSelectedBook={addSelectedBook} list={results} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default AutoComplete;

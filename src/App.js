@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import SearchBox from "./components/search-box";
-import List from "./components/list";
-import "./App.css";
+import React, { useState } from 'react';
+import SearchBox from './components/search-box';
+import BookList from './components/book-list';
+import './App.css';
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="container">
       <SearchBox addSelectedBook={addSelectedBook} />
-      <List books={books} />
+      <BookList books={books} />
     </div>
   );
 }

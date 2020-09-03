@@ -1,0 +1,17 @@
+.list-bullets {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-content {
+  border: 1px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  flex-basis: 25%;
+}
+
+.label-size {
+  flex-basis: 100%;
+  text-align: center;
+}

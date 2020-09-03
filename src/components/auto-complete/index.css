@@ -1,5 +1,33 @@
 .autocomplete-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 90%;
+}
+
+.autocomplete-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 88%;
+}
+
+.form-box {
+  display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-basis: 30%;
+}
+
+.form-size {
+  flex-basis: 60%;
+}
+
+.list-box {
+  display: flex;
+  justify-content: center;
+}
+
+.list-size {
+  flex-basis: 60%;
 }
