@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AutoComplete from "../auto-complete";
 
 import "./index.css";
 
-function SearchBox() {
+function SearchBox({ addSelectedBook }) {
   return (
     <div className="search-container">
-      <AutoComplete />
+      <AutoComplete addSelectedBook={addSelectedBook} />
     </div>
   );
 }
