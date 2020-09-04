@@ -7,7 +7,14 @@ function BookList({ books }) {
     <div className="list-container">
       {books?.map((book) => (
         <div className="booklist-card">
-          <div className="booklist-box-width">{book.title}</div>
+          <div className="booklist-box-width">
+            <Listing
+              keyProp={'id'}
+              label={['title', 'author', 'summary']}
+              item={book}
+            />
+            {/* {book.title} */}
+          </div>
           {/* // <div className="booklist-card"> */}
           {/* //   <div className="booklist-size"> */}
           {/* //     <Listing */}

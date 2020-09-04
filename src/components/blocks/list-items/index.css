@@ -2,6 +2,20 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  /* min-width: 0; */
+}
+
+.ellipsis-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipsis-box-width {
+  min-width: 0;
+  flex-basis: 28%;
+  display: flex;
 }
 
 .item-content {
@@ -17,7 +31,9 @@
 }
 
 .ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
+  max-width: 98%;
   text-overflow: ellipsis;
+  overflow: hidden;
+  width: fit-content;
+  white-space: normal;
 }
