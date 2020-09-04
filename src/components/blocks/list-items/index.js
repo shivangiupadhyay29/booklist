@@ -1,7 +1,22 @@
 import React from 'react';
 import './index.css';
 
-export default function Listing({ list, onClickHandler, keyProp, label }) {
+export default function Listing({
+  list,
+  onClickHandler,
+  keyProp,
+  label,
+  item
+}) {
+  if (item && Array.isArray(label)) {
+    return (
+      <li key={item[keyProp]} className="list-bullets">
+        <span className="label-size">{item[label[0]]}</span>
+        <span className="label-size">{item[label[1]]}</span>
+        <span className="label-size ellipsis">{item[label[2]]}</span>
+      </li>
+    );
+  }
   return (
     <ul className="list-bullets">
       {list?.map((item) => (

@@ -5,13 +5,19 @@ import './index.css';
 function BookList({ books }) {
   return (
     <div className="list-container">
-      <div className="booklist-card">
-        {/* <Listing
-          list={books}
-          keyProp={'id'}
-          label={('title', 'author', 'summary')}
-        /> */}
-      </div>
+      {books?.map((book) => (
+        <div className="booklist-card">
+          <div className="booklist-box-width">{book.title}</div>
+          {/* // <div className="booklist-card"> */}
+          {/* //   <div className="booklist-size"> */}
+          {/* //     <Listing */}
+          {/* //       keyProp={'id'} */}
+          {/* //       label={['title', 'author', 'summary']} */}
+          {/* //       item={book} */}
+          {/* //     /> */}
+          {/* //   </div> */}
+        </div>
+      ))}
     </div>
   );
 }
