@@ -1,5 +1,5 @@
-import dataByProperty from "./data";
-import constant from "./constant";
+import dataByProperty from './data';
+import constant from './constant';
 
 // get the data by property
 const schema = (key) => {
@@ -7,7 +7,7 @@ const schema = (key) => {
 };
 
 // search function
-function searchCharacters(search) {
+function searchBooksByCharacters(search) {
   // gathers the titles and authors from the data JSON.
   const titles = schema(constant.TITLES);
   const authors = schema(constant.AUTHORS);
@@ -18,10 +18,10 @@ function searchCharacters(search) {
       ?.map((item, index) => ({
         ...item,
         title: titles[index],
-        author: authors[index][constant.AUTHOR],
+        author: authors[index][constant.AUTHOR]
       }))
       //filter is to filter out the item with matches string
       ?.filter((item) => item.summary.includes(search))
   );
 }
-export default searchCharacters;
+export default searchBooksByCharacters;

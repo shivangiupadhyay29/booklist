@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { searchCharacters, autoSuggestion } from '../../utility';
+import { searchBooksByCharacters, autoSuggestion } from '../../utility';
 import { useDebounce } from '../../custom-hooks';
 
 import SuggestionList from './suggestion-list';
@@ -20,7 +20,7 @@ function AutoComplete({ addSelectedBook, limit }) {
   useEffect(() => {
     // Make sure we have a value (user has entered something in input)
     if (debouncedSearchTerm?.length > 0) {
-      const books = searchCharacters(debouncedSearchTerm);
+      const books = searchBooksByCharacters(debouncedSearchTerm);
       setResults(autoSuggestion(books, limit));
     } else {
       setResults([]);

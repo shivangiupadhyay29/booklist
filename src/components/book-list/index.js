@@ -13,16 +13,7 @@ function BookList({ books }) {
               label={['title', 'author', 'summary']}
               item={book}
             />
-            {/* {book.title} */}
           </div>
-          {/* // <div className="booklist-card"> */}
-          {/* //   <div className="booklist-size"> */}
-          {/* //     <Listing */}
-          {/* //       keyProp={'id'} */}
-          {/* //       label={['title', 'author', 'summary']} */}
-          {/* //       item={book} */}
-          {/* //     /> */}
-          {/* //   </div> */}
         </div>
       ))}
     </div>
