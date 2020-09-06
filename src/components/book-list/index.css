@@ -12,12 +12,12 @@
   margin: 1rem;
   flex-grow: 10;
   flex-shrink: 10;
+  min-width: 0;
 }
 
 .booklist-box-width {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   flex-basis: 28%;
   border: 1px solid lightgrey;
   flex-grow: 10;

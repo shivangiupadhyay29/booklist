@@ -18,9 +18,10 @@ export default function Listing({
     );
   }
   return (
-    <ul className="list-bullets">
-      {list?.map((item) => (
+    <ul className="list-bullets" tabindex="1">
+      {list?.map((item, index) => (
         <li
+          tabindex={index + 2}
           key={item[keyProp]}
           onClick={onClickHandler(item)}
           className="item-content"
