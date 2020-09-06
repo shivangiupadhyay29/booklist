@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import AutoComplete from "../auto-complete";
+import React from 'react';
+import AutoComplete from '../auto-complete';
 
-import "./index.css";
+import './index.css';
 
 function SearchBox({ addSelectedBook }) {
   const limit = 3;
