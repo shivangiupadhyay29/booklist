@@ -10,7 +10,7 @@ export default function Listing({
 }) {
   if (item && Array.isArray(label)) {
     return (
-      <li key={item[keyProp]} className="list-bullets">
+      <li key={item[keyProp]} className="list-bullets" tabindex={item.id + 2}>
         <span className="label-size">{item[label[0]]}</span>
         <span className="label-size">{item[label[1]]}</span>
         <span className="label-size ellipsis">{item[label[2]]}</span>
