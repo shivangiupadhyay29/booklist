@@ -1,6 +1,6 @@
 import React from 'react';
 import Listing from '../index.js';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 
 describe('Listing component', () => {
   it('Listing component unit testing', () => {
@@ -22,5 +22,26 @@ describe('Listing component', () => {
       />
     );
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('listing component', () => {
+    const mockFnHandler = jest.fn();
+    const mockList = [
+      {
+        id: 0,
+        title: 'book title',
+        author: 'author name',
+        summary: 'summary of the book text'
+      }
+    ];
+    const listingWrapper = mount(
+      <Listing
+        list={mockList}
+        onClickHandler={mockFnHandler}
+        keyProp={'id'}
+        label={'title'}
+      />
+    );
+    expect(listingWrapper).toMatchSnapshot();
   });
 });

@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Listing component Listing component unit testing 1`] = `ShallowWrapper {}`;
+
+exports[`Listing component listing component 1`] = `ReactWrapper {}`;
