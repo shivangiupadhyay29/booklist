@@ -1,4 +1,5 @@
 import React from 'react';
+import Option from './option';
 import './index.css';
 
 export default function Listing({
@@ -11,15 +12,9 @@ export default function Listing({
   if (item && Array.isArray(label)) {
     return (
       <li key={item[keyProp]} className="list-bullets" tabindex={item.id + 2}>
-        <span className="label-size" title={item[label[0]]}>
-          {item[label[0]]}
-        </span>
-        <span className="label-size" title={item[label[1]]}>
-          {item[label[1]]}
-        </span>
-        <span className="label-size ellipsis" title={item[label[2]]}>
-          {item[label[2]]}
-        </span>
+        <Option classText={'label-size'} content={item[label[0]]} />
+        <Option classText={'label-size'} content={item[label[1]]} />
+        <Option classText={'label-size ellipsis'} content={item[label[2]]} />
       </li>
     );
   }
