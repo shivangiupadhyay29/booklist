@@ -1,3 +1,3 @@
 export default function autoSuggestion(list, limit) {
-  return list.slice(0, limit);
+  return list?.length > limit ? list.slice(0, limit) : list;
 }

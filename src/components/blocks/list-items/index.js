@@ -11,7 +11,7 @@ export default function Listing({
 }) {
   if (item && Array.isArray(label)) {
     return (
-      <li key={item[keyProp]} className="list-bullets" tabindex={item.id + 2}>
+      <li key={item[keyProp]} className="list-bullets" tabIndex={item.id + 2}>
         <Option classText={'label-size'} content={item[label[0]]} />
         <Option classText={'label-size'} content={item[label[1]]} />
         <Option classText={'label-size ellipsis'} content={item[label[2]]} />
@@ -19,10 +19,10 @@ export default function Listing({
     );
   }
   return (
-    <ul className="list-bullets" tabindex="1">
+    <ul className="list-bullets" tabIndex="1">
       {list?.map((item, index) => (
         <li
-          tabindex={index + 2}
+          tabIndex={index + 2}
           key={item[keyProp]}
           onClick={onClickHandler(item)}
           className="item-content"

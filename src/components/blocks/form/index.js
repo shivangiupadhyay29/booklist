@@ -11,7 +11,7 @@ export default ({ onChangeHandler, inputPlaceholder }) => (
       onChange={(e) => onChangeHandler(e.target.value)}
       title={inputPlaceholder}
       aria-label={inputPlaceholder}
-      tabindex="0"
+      tabIndex="0"
     />
   </form>
 );

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1599413283857" clover="3.2.0">
-  <project timestamp="1599413283858" name="All files">
-    <metrics statements="91" coveredstatements="43" conditionals="40" coveredconditionals="5" methods="47" coveredmethods="24" elements="178" coveredelements="72" complexity="0" loc="91" ncloc="91" packages="11" files="18" classes="18"/>
+<coverage generated="1599928690444" clover="3.2.0">
+  <project timestamp="1599928690444" name="All files">
+    <metrics statements="117" coveredstatements="67" conditionals="54" coveredconditionals="18" methods="53" coveredmethods="31" elements="224" coveredelements="116" complexity="0" loc="117" ncloc="117" packages="11" files="18" classes="18"/>
     <package name="src">
       <metrics statements="46" coveredstatements="3" conditionals="34" coveredconditionals="0" methods="21" coveredmethods="1"/>
       <file name="App.js" path="E:\2020\assignments\unibuddy\booklist\src\App.js">
@@ -61,9 +61,9 @@
       </file>
     </package>
     <package name="src.components.auto-complete">
-      <metrics statements="12" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
+      <metrics statements="15" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
       <file name="index.js" path="E:\2020\assignments\unibuddy\booklist\src\components\auto-complete\index.js">
-        <metrics statements="11" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
+        <metrics statements="14" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
         <line num="11" count="11" type="stmt"/>
         <line num="14" count="11" type="stmt"/>
         <line num="17" count="11" type="stmt"/>
@@ -71,10 +71,13 @@
         <line num="22" count="5" type="cond" truecount="1" falsecount="1"/>
         <line num="23" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="30" count="11" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
         <line num="33" count="11" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="11" type="stmt"/>
       </file>
       <file name="suggestion-list.js" path="E:\2020\assignments\unibuddy\booklist\src\components\auto-complete\suggestion-list.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -91,7 +94,7 @@
       </file>
     </package>
     <package name="src.components.blocks.list-items">
-      <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
       <file name="index.js" path="E:\2020\assignments\unibuddy\booklist\src\components\blocks\list-items\index.js">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="12" count="12" type="cond" truecount="4" falsecount="0"/>
@@ -100,8 +103,8 @@
         <line num="24" count="1" type="stmt"/>
       </file>
       <file name="option.js" path="E:\2020\assignments\unibuddy\booklist\src\components\blocks\list-items\option.js">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="0" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.book-list">
@@ -143,10 +146,10 @@
       </file>
     </package>
     <package name="src.utility.auto-suggestion">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="index.js" path="E:\2020\assignments\unibuddy\booklist\src\utility\auto-suggestion\index.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="2" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="cond" truecount="1" falsecount="1"/>
       </file>
     </package>
     <package name="src.utility.auto-suggestion.__test__">
@@ -161,7 +164,7 @@
       </file>
     </package>
     <package name="src.utility.search">
-      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <metrics statements="31" coveredstatements="31" conditionals="12" coveredconditionals="12" methods="11" coveredmethods="11"/>
       <file name="constant.js" path="E:\2020\assignments\unibuddy\booklist\src\utility\search\constant.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
@@ -170,14 +173,37 @@
         <line num="3" count="66" type="stmt"/>
       </file>
       <file name="index.js" path="E:\2020\assignments\unibuddy\booklist\src\utility\search\index.js">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <metrics statements="30" coveredstatements="30" conditionals="12" coveredconditionals="12" methods="10" coveredmethods="10"/>
         <line num="5" count="4" type="stmt"/>
         <line num="6" count="24" type="stmt"/>
-        <line num="12" count="8" type="stmt"/>
-        <line num="13" count="8" type="stmt"/>
-        <line num="16" count="8" type="stmt"/>
-        <line num="18" count="440" type="stmt"/>
-        <line num="24" count="440" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="36064" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="33" count="440" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="36" count="440" type="stmt"/>
+        <line num="37" count="28696" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="18032" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="11752" type="stmt"/>
+        <line num="40" count="18032" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="11752" type="stmt"/>
+        <line num="42" count="11752" type="stmt"/>
+        <line num="45" count="10664" type="stmt"/>
+        <line num="53" count="8" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="57" count="8" type="stmt"/>
+        <line num="58" count="8" type="stmt"/>
+        <line num="63" count="8" type="stmt"/>
+        <line num="64" count="8" type="stmt"/>
+        <line num="65" count="8" type="stmt"/>
+        <line num="66" count="8" type="stmt"/>
+        <line num="71" count="8" type="stmt"/>
+        <line num="72" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="73" count="7" type="stmt"/>
+        <line num="74" count="8" type="stmt"/>
+        <line num="75" count="8" type="stmt"/>
+        <line num="76" count="8" type="stmt"/>
+        <line num="80" count="8" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
   </project>

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list-options list -item for options component unit testing 1`] = `ShallowWrapper {}`;
