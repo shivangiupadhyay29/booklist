@@ -21,9 +21,6 @@ function AutoComplete({ addSelectedBook, limit }) {
     // Make sure we have a value (user has entered something in input)
     if (debouncedSearchTerm?.length > 0) {
       const books = searchBooksByCharacters(debouncedSearchTerm);
-      debugger;
-      console.log('books', books);
-      console.log('limit', limit);
       setResults(autoSuggestion(books, limit));
     } else {
       setResults([]);
